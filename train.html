@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Train-Basic </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.Be1hh2dDtyM.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/am=AQE/rs=AGLTcCOpGD2Of1XQc4XAMGG1PqFGZLJs9Q/cb=gapi.loaded_0" async=""></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	  <script type="text/javascript" charset="UTF-8" src="https://apis.google.com/js/api.js?onload=__iframefcb223529" gapi_processed="true"></script>
+	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+  </head>
+   <body>
+
+  <div class="container">
+	<div class="jumbotron">
+		<h1 class="text-center">Destination Train Stop</h1>
+ </div>
+
+	<div class="row">
+		<div class="col-lg-12">
+         <div class="panel panel-primary">
+		 <div class="panel-heading">
+		 <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+	</div>
+		<div class="panel-body">
+	     <table class="table table-hover" id="trainTable">
+		 <thead>
+		 <tr>
+			<th>Train Name</th>
+			<th>Destination</th>
+			<th>Frequency (min)</th>
+			<th>Next Arrival</th>
+		    <th>Minutes Away</th>
+		</tr>
+	</thead>
+	<tbody
+</div>
+<div>
+</div>
+ 
+	  <div class="panel panel-primary">
+		<div class="panel-heading">
+		 <h3 class="panel-title"><strong>Add Train</strong></h3>
+	  </div>
+	   <div class="panel-body">
+				
+	   <form>
+	    <div class="form-group">
+		  <label for="">Train Name</label>
+		  <input type="text" class="form-control" id="trainNameInput">
+		  </div>
+
+		 <div class="form-group">
+		  <label for="">Destination</label>
+		  <input type="text" class="form-control" id="destinationInput">
+	   </div>
+
+		<div class="form-group">
+		 <label for="">First Train Time (HH:mm - military time)</label>
+		 <input type="text" class="form-control" id="firstTrainInput">
+	  </div>
+
+		<div class="form-group">
+		 <label for="">Frequency (min)</label>
+		 <input type="text" class="form-control" id="frequencyInput">
+	</div>
+
+		<button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
+	</form>
+
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+<script src="assets/javascript/train.js"></script>
+</body>
+</html>
